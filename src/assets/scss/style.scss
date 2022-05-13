@@ -1,0 +1,27 @@
+@import '~/node_modules/bootstrap/scss/bootstrap.scss';
+
+/* utilities */
+
+.btn_custom {
+    background-color: $yellow_orange;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+        color: white;
+    }
+}
+
+.btn_custom_2 {
+    background-color: $btn_2;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+        color: white;
+    }
+}
+
+.fs_sm {
+    font-size: 0.8rem;
+}
