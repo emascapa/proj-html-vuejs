@@ -2,6 +2,7 @@
   <div id="app">
     <SiteHeader />
     <Section1 />
+    <Section2 />
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 import 'bootstrap';
 import SiteHeader from '@/components/HeaderComponent.vue'
 import Section1 from '@/components/SectionOneComponent.vue'
+import Section2 from '@/components/SectionTwoComponent.vue'
 
 export default {
   name: 'App',
   components: {
     SiteHeader,
-    Section1
+    Section1,
+    Section2,
   }
 }
 </script>
