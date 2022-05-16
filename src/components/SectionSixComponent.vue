@@ -4,25 +4,6 @@
       <div class="lead_content text-center mx-auto py-4">
         <h2 class="text-capitalize">what our clients say</h2>
       </div>
-      <!--       <div class="row row-cols-1 row-cols-md-3 mb-4 g-4">
-        <div v-for="(item, index) in sectionItems" :key="index" class="col">
-          <div class="text-center rounded rounded-4 h-100 d-flex flex-column justify-content-between">
-            <div class="mb-3">
-              <img
-                :src="item.image"
-                :alt="index"
-                class="img-fluid rounded rounded-4 mb-3"
-              />
-              <h5 class="yellow_orange text-capitalize">{{ item.title }}</h5>
-              <span class="fs_sm">{{ item.date }}</span>
-            </div>
-            <p>{{ item.paragraph }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!--       <div class="text-center pb-4">
-        <a href="#" class="btn btn_custom rounded-pill">go to news</a>
-      </div> -->
       <div
         class="slider mt-4 pb-4"
         @mouseenter="stopSlider"
@@ -45,15 +26,24 @@
             }}</span>
           </div>
         </div>
-        <div
-          class="commands d-flex justify-content-center"
-          @click="sliderNext"
-        >
+        <div class="commands d-flex justify-content-center" @click="sliderNext">
           <div
             v-for="(item, index) in clients.length"
             :key="index"
             :class="index == slider_counter ? 'bullet active' : 'bullet'"
           ></div>
+        </div>
+      </div>
+      <div class="divider my-3"></div>
+      <div class="row row-cols-2 row-cols-lg-4 g-3 py-3">
+        <div
+          v-for="(item, index) in partners"
+          :key="index"
+          class="col text-center"
+        >
+          <div class="partner">
+            <img :src="item.logo" alt="" class="img-fluid" />
+          </div>
         </div>
       </div>
     </div>
@@ -84,7 +74,7 @@ export default {
             "Understanding life makes you a better man, understanding pizza makes you a way better man.",
         },
       ],
-      companies: [
+      partners: [
         {
           logo: require("@/assets/img/clients_partner_5-200x202.png"),
         },
@@ -148,6 +138,14 @@ section {
     .bullet.active {
       background-color: rgb(33, 37, 41);
     }
+  }
+
+  .divider {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .partner > img {
+    max-width: 100px;
   }
 }
 
