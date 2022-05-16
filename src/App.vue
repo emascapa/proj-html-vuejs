@@ -3,6 +3,7 @@
     <SiteHeader />
     <Section1 />
     <Section2 />
+    <Section3 />
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import 'bootstrap';
 import SiteHeader from '@/components/HeaderComponent.vue'
 import Section1 from '@/components/SectionOneComponent.vue'
 import Section2 from '@/components/SectionTwoComponent.vue'
+import Section3 from '@/components/SectionThreeComponent.vue'
 
 export default {
   name: 'App',
@@ -18,6 +20,7 @@ export default {
     SiteHeader,
     Section1,
     Section2,
+    Section3,
   }
 }
 </script>

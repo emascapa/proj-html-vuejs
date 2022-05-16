@@ -79,7 +79,7 @@ section {
   }
 
   .row {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   
   .bg_custom {
