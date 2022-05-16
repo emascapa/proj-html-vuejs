@@ -4,6 +4,8 @@
     <Section1 />
     <Section2 />
     <Section3 />
+    <Section4 />
+    <Section5 />
   </div>
 </template>
 
@@ -13,6 +15,8 @@ import SiteHeader from '@/components/HeaderComponent.vue'
 import Section1 from '@/components/SectionOneComponent.vue'
 import Section2 from '@/components/SectionTwoComponent.vue'
 import Section3 from '@/components/SectionThreeComponent.vue'
+import Section4 from '@/components/SectionFourComponent.vue'
+import Section5 from '@/components/SectionFiveComponent.vue'
 
 export default {
   name: 'App',
@@ -21,6 +25,8 @@ export default {
     Section1,
     Section2,
     Section3,
+    Section4,
+    Section5,
   }
 }
 </script>

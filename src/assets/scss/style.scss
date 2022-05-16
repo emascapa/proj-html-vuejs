@@ -22,6 +22,16 @@
     }
 }
 
+.btn_custom_3 {
+    border: 2px solid rgb(33, 37, 41);
+    color: rgb(33, 37, 41);
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+        color: rgb(33, 37, 41);
+    }
+}
+
 .fs_sm {
     font-size: 0.8rem;
 }

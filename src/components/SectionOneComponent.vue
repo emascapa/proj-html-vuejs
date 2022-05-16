@@ -73,8 +73,10 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-  .lead_content {
-    width: 50%;
+  section {
+    .lead_content {
+      width: 50%;
+    }
   }
 }
 </style>

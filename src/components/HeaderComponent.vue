@@ -112,8 +112,10 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    width: 40%;
+  header {
+    .hero {
+      width: 40%;
+    }
   }
 }
 </style>
