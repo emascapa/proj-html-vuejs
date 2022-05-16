@@ -53,7 +53,7 @@
 
 <script>
 export default {
-  name: "SectionOneComponent",
+  name: "SectionSixComponent",
   data() {
     return {
       slider_counter: 0,
@@ -141,7 +141,7 @@ section {
   }
 
   .divider {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 2px solid rgb(239, 237, 237);
   }
 
   .partner > img {

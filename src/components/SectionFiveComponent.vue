@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: "SectionOneComponent",
+  name: "SectionFiveComponent",
   data() {
     return {
       sectionItems: [
