@@ -11,7 +11,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 mb-4 g-3">
         <div v-for="(item, index) in sectionItems" :key="index" class="col">
           <div class="text-center p-3 rounded rounded-4 h-100 bg-white d-flex flex-column align-items-center">
-            <h2 class="text-capitalize mb-4">{{ item.plan }}</h2>
+            <h2 class="text-capitalize fs-1 mb-4">{{ item.plan }}</h2>
             <div class="mb-4 d-flex justify-content-center">
               <span class="fw-bold fs-5 mt-1">$</span>
               <span class="price_big">{{ item.price }}</span>

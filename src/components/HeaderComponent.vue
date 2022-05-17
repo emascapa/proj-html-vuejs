@@ -1,8 +1,8 @@
 <template>
-  <header class="py-4">
+  <header class="py-4" id="site_header">
     <nav class="d-flex align-items-center justify-content-between container">
       <a class="logo" href="#">
-        <SiteLogo class="logo" />
+        <SiteLogo :logoColor="true" class="logo" />
       </a>
 
       <div class="d-flex align-items-center">
@@ -27,17 +27,17 @@
 
     <div class="container">
       <div class="hero">
-        <h1>SEM Campaigns Made Simple With Avada</h1>
-        <p>
+        <h1 class="shadow_custom">SEM Campaigns Made Simple With Avada</h1>
+        <p class="shadow_custom">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           Reprehenderit minima alias iusto velit fugit?
         </p>
 
         <div>
-          <a href="#" class="btn btn_custom rounded-pill fs_sm me-2"
+          <a href="#" class="btn btn_custom rounded-pill fs_sm my-1 me-2"
             >buy avada now</a
           >
-          <a href="#" class="btn btn_custom_2 rounded-pill fs_sm">contact us</a>
+          <a href="#" class="btn btn_custom_2 rounded-pill fs_sm my-1">contact us</a>
         </div>
       </div>
     </div>
@@ -108,6 +108,10 @@ header {
   .hero {
     width: 80%;
     padding: 8rem 0;
+
+    .shadow_custom {
+      text-shadow: 0 0 4px #000000;
+    }
   }
 }
 

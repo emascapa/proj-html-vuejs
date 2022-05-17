@@ -10,15 +10,15 @@ Vue.use(bootstrap)
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons 👇 QUI AGGIUNGI LE ICONE che vuoi usare in camelCase */
-import { faRoad, faVideo, faDroplet, faGear, faBuilding, faChartColumn} from '@fortawesome/free-solid-svg-icons'
+import { faRoad, faVideo, faDroplet, faGear, faBuilding, faChartColumn, faChevronUp} from '@fortawesome/free-solid-svg-icons'
 
-import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faGoogle, faInstagram, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library 👇 QUI AGGIUNGI IL NOME DELL'ICONA in camelCase*/
-library.add(faRoad, faVideo, faDroplet, faGoogle, faGear, faBuilding, faChartColumn) 
+library.add(faRoad, faVideo, faDroplet, faGoogle, faGear, faBuilding, faChartColumn, faInstagram, faFacebook, faTwitter, faYoutube, faChevronUp) 
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
